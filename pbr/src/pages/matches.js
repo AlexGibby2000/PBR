@@ -32,15 +32,15 @@ export default function Matches() {
         ) : (
           <ul className="space-y-4">
             {matches.map((match) => (
-              <li key={match.id} className="bg-white p-4 rounded-lg shadow">
+              <li key={match.id} className="bg-blue-600 p-4 rounded-lg shadow">
                 <p className="text-lg font-semibold">
                   {match.player1} vs {match.player2}
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Score: <span className="font-bold">{match.score}</span>
                 </p>
-                <p className="text-green-600">Winner: {match.winner}</p>
-                <p className="text-sm text-gray-500">{match.date}</p>
+                <p className="text-green-300">Winner: {match.winner}</p>
+                <p className="text-sm text-gray-900">{match.date}</p>
               </li>
             ))}
           </ul>
