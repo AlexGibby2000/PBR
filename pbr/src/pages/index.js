@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
@@ -5,9 +7,11 @@ export default function Home() {
       <p className="text-lg text-gray-700 mt-2">
         Track your pickleball rankings easily.
       </p>
-      <button className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-        Get Started
-      </button>
+      <Link href="/matches">
+        <button className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+          View Matches
+        </button>
+      </Link>
     </div>
   );
 }
